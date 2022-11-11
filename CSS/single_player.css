@@ -1,0 +1,199 @@
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+*:after,*:before,*
+{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Other Artists Section Styles */
+
+.other-artists-container {
+    width: 100%;
+    height: 30vh;
+
+    border: 1px solid #0c0c31;
+}
+
+@media screen and (max-width: 1100px) {
+    .other-artists-container {
+        display: none;
+    }
+}
+
+/* Main Section */
+
+#main-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    border: 1px solid #0b0b2c;
+    z-index: 3;
+}
+
+.main-section {
+    width: 67%;
+    height: 1000px;
+    margin-top: 16vh;
+}
+
+/* Cold Band Card Styles */
+
+.card-container{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+
+    background-color: #14144f;
+}
+
+.card-image-container {
+    width: 40%;
+    height: auto;
+    background: linear-gradient(to bottom, rgba(13,0,101,0) 5%, rgba(13,0,101,1)), url('/Images/artist_07.jpg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card-details-container {
+    width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .card-image-container {
+        width: 90%;
+        height: 80%;
+        flex-shrink: 0;
+        margin: auto;
+    }
+    .card-details-container {
+        width: 90%;
+        height: auto;
+        flex-shrink: 0;
+        margin: auto;
+        background-color: #14144f;
+    }
+    .card-container{
+        flex-direction: column;
+        background-color: #0b0b2c;
+    }
+}
+
+.card-details {
+    width: 100%;
+    height: 90%;
+    margin-top: 5%;
+    padding-left: 3%;
+    color: #a8a7a7;
+}
+
+.card-description {
+    color: lightgrey;
+    font-size: small;
+}
+
+.play-con {
+    padding-left: 10px;
+}
+
+.play-all {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 300;
+}
+
+.play {
+    padding: 2px;
+    text-align: center;
+    background: linear-gradient(100deg, rgba(57,13,185,1) 21%, rgba(137,5,150,1) 89%);
+    cursor: pointer;
+}
+
+/* Play List Styles */
+
+.play-list-container {
+    width: 100%;
+    height: 85vh;
+    margin-top: 10px;
+    overflow: scroll;
+}
+
+.play-list-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.play-list-container div {
+    margin-top: 10px;
+}
+
+.play-list {
+    width: 102%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    margin-left: -20px;
+
+    background-color:rgba(15, 15, 58, 0.9);
+
+}
+
+.play-list-det {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-list div {
+    margin-left: 15px;
+}
+
+.play-image {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    
+
+    border: 0px solid white;
+    box-shadow: 0px 0px 5px 1px rgba(255,252,255,1);
+}
+
+.hear-and-plus {
+    padding-left: 50%;
+    padding-right: 2%;
+}
+
+@media screen and (max-width: 1100px) {
+    .hear-and-plus {
+        padding-left: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .play-list-container {
+        margin-top: 190px;
+    }
+    .play-list {
+        width: 104%;
+    }
+}

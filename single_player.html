@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ninja Studio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/single_player.css">
+        <link rel="stylesheet" href="./CSS/index_style.css">
+        <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    </head>
+
+    <body style="background-color: #0b0b2c; position: relative;">
+
+        <div class="nav-nav-container">
+            <nav class="container-fluid">
+                <div class="logo">
+                    <img src="./Images/logo.jpg" alt="logo">
+                </div>
+                <div class="horizontal-list">
+                    <div class="menu-icon">
+                        <a href="">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-items">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Favourites</a></li>
+                                <li><a href="#">Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-list-1">
+                        <ul class="nav-items">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Favourites</a>
+                            </li>
+                            <li>
+                                <a href="#">Playlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-list-2">
+                        <form class="search-container">
+                            <div class="search-box">
+                                <input type="text" role="search" class="search-txt" placeholder="Search">
+                                <button href="#" class="search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="noti-prof">
+                    <button class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <a href="#" class="profile-icon">
+                        <img src="/Images/profile_icon.jpg" alt="">
+                    </a>
+                </div>
+            </nav>
+
+
+            <div class="aside-menu">
+                <a id="open-menu" href="#side-bar">
+                    <span>Queue &nbsp; <i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                </a>
+            </div>
+
+            <div class="container aside-container" id="side-bar" href="#close-menu">
+
+                <div class="other-artists-container">
+
+                    <div class="player-heading">
+                        <a href="#" id="close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                        <div class="player-name text-light m-2 px-2 fs-4 fw-semibold">Similar Artists</div>
+                        <div class="player-queue">
+                            <button class="queue-btn text-success">View All <i
+                                    class="fa-sharp fa-solid fa-angle-down"></i>
+                                <div class="queue-content">
+                                    <ul class="queue-nav m-2">
+                                        <li style="padding-bottom: 2px;"><a href="#">Playlists</a></li>
+                                        <li style="border: none; padding-top: 2px;"><a href="#">Subscribe</a></li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="song-list-container">
+                        <ol class="song-list" style="color: white;">
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/artist_01.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Vijay Prakash</dt>
+                                        <dd style="font-size: 10px;">Kannada</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/artist_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Zyan Malik</dt>
+                                        <dd style="font-size: 10px;">English</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </div>
+
+                <div class="aside">
+
+                    <div class="player-heading">
+                        <a href="#" id="close-menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                        <div class="player-name text-light m-2 px-2 fs-4 fw-semibold">Queue</div>
+                        <div class="player-queue">
+                            <button class="queue-btn text-success">Queue <i class="fa-sharp fa-solid fa-angle-down"></i>
+                                <div class="queue-content">
+                                    <ul class="queue-nav m-2">
+                                        <li style="padding-bottom: 2px;"><a href="#">Playlists</a></li>
+                                        <li style="border: none; padding-top: 2px;"><a href="#">Favourite Songs</a></li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="song-list-container">
+                        <ol class="song-list">
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Lofi</dt>
+                                        <dd style="font-size: 10px;">By Varun Dagar</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Jagave Neenu</dt>
+                                        <dd style="font-size: 10px;">Love 360</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_03.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Gagana Nee</dt>
+                                        <dd style="font-size: 10px;">KGF</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_04.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Saami Saami</dt>
+                                        <dd style="font-size: 10px;">Pushpa</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_05.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Nachoo Nachoo</dt>
+                                        <dd style="font-size: 10px;">RRR</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_06.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Singara Siriye</dt>
+                                        <dd style="font-size: 10px;">Kantara</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_07.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Dhyaanisi Kaayuvenu</dt>
+                                        <dd style="font-size: 10px;">Voice of Shreya Ghoshal</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_08.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Gombe Helutaite</dt>
+                                        <dd style="font-size: 10px;">Puneeth Rajkumar</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Lofi</dt>
+                                        <dd style="font-size: 10px;">By Varun Dagar</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Jagave Neenu</dt>
+                                        <dd style="font-size: 10px;">Love 360</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_03.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Gagana Nee</dt>
+                                        <dd style="font-size: 10px;">KGF</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_04.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Saami Saami</dt>
+                                        <dd style="font-size: 10px;">Pushpa</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_05.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Nachoo Nachoo</dt>
+                                        <dd style="font-size: 10px;">RRR</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_06.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Singara Siriye</dt>
+                                        <dd style="font-size: 10px;">Kantara</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_07.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Dhyaanisi Kaayuvenu</dt>
+                                        <dd style="font-size: 10px;">Voice of Shreya Ghoshal</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_08.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Gombe Helutaite</dt>
+                                        <dd style="font-size: 10px;">Puneeth Rajkumar</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Lofi</dt>
+                                        <dd style="font-size: 10px;">By Varun Dagar</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_02.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Jagave Neenu</dt>
+                                        <dd style="font-size: 10px;">Love 360</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_03.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Gagana Nee</dt>
+                                        <dd style="font-size: 10px;">KGF</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_04.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Saami Saami</dt>
+                                        <dd style="font-size: 10px;">Pushpa</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_05.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Nachoo Nachoo</dt>
+                                        <dd style="font-size: 10px;">RRR</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_06.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Singara Siriye</dt>
+                                        <dd style="font-size: 10px;">Kantara</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_07.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Dhyaanisi Kaayuvenu</dt>
+                                        <dd style="font-size: 10px;">Voice of Shreya Ghoshal</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="song-list-item">
+                                    <div class="list-img">
+                                        <img src="/Images/song_08.jpg" alt="">
+                                    </div>
+                                    <dl style="display: inline-block;">
+                                        <dt style="font-size: 15px;">Gombe Helutaite</dt>
+                                        <dd style="font-size: 10px;">Puneeth Rajkumar</dd>
+                                    </dl>
+                                    <div class="heart-block">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="container" id="main-container">
+            <div class="main-section">
+
+                <!-- Cold Band Card -->
+                <div class="card-container">
+                    <div class="card-image-container"></div>
+                    <div class="card-details-container">
+                        <div class="card-details">
+                            <dl>
+                                <dt style="font-size: 20px; color: white;">
+                                    <span>Cold Play</span>
+                                    <span style="float: right; font-size: 13px; font-weight: 300; padding: 10px 20px;">851 Followers</span>
+                                </dt>
+                                <dd style="font-size: smaller; color: #a8a7a7;">British Band</dd>
+                            </dl>
+
+                            <div class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad expedita ullam
+                                culpa itaque sit tempora illum voluptatum atque? Aut, laborum incidunt. Ex accusantium
+                                dolor asperiores ab officia rerum nemo.
+                            </div>
+
+                            <div class="play-all">
+                                <div class="play-con">
+                                    <div class="play">
+                                        <span>Play All</span>
+                                    </div>
+                                    <div style="font-size: 10px;">247 Track | 180 Albums</div>
+                                </div>
+                                <div class="follow">
+                                    <span>Follow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Play-list -->
+                <div class="play-list-container">
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>01</div>
+                            <div class="play-image" style="background-image: url('/Images/kannada_02.jpg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Sultana</dt>
+                                    <dd style="font-size: 12px;">KGF</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>02</div>
+                            <div class="play-image" style="background-image: url('/Images/song_06.jpg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Singara Siriye</dt>
+                                    <dd style="font-size: 12px;">Kantara</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>03</div>
+                            <div class="play-image" style="background-image: url('/Images/play_02.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Kesariya</dt>
+                                    <dd style="font-size: 12px;">Brahmastra</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>04</div>
+                            <div class="play-image" style="background-image: url('/Images/play_02.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Kich Meri Photo</dt>
+                                    <dd style="font-size: 12px;">Sanam Teri Kasam</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>05</div>
+                            <div class="play-image" style="background-image: url('/Images/play_03.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Breakup Song</dt>
+                                    <dd style="font-size: 12px;">Dil Hai Mushkil</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>06</div>
+                            <div class="play-image" style="background-image: url('/Images/play_04.jpg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Tip Tip Barsa Pani</dt>
+                                    <dd style="font-size: 12px;">Suryavamshi</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>07</div>
+                            <div class="play-image" style="background-image: url('/Images/play_05.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>jo tenu dhoop lagya ve</dt>
+                                    <dd style="font-size: 12px;">Rito Riba</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>08</div>
+                            <div class="play-image" style="background-image: url('/Images/play_06.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Enna Sona Tu</dt>
+                                    <dd style="font-size: 12px;">Ok Jaanu</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>09</div>
+                            <div class="play-image" style="background-image: url('/Images/kannada_02.jpg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Sultana</dt>
+                                    <dd style="font-size: 12px;">KGF</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>10</div>
+                            <div class="play-image" style="background-image: url('/Images/song_06.jpg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Singara Siriye</dt>
+                                    <dd style="font-size: 12px;">Kantara</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>11</div>
+                            <div class="play-image" style="background-image: url('/Images/play_02.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Kesariya</dt>
+                                    <dd style="font-size: 12px;">Brahmastra</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>12</div>
+                            <div class="play-image" style="background-image: url('/Images/play_02.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Kich Meri Photo</dt>
+                                    <dd style="font-size: 12px;">Sanam Teri Kasam</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>13</div>
+                            <div class="play-image" style="background-image: url('/Images/play_03.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Breakup Song</dt>
+                                    <dd style="font-size: 12px;">Dil Hai Mushkil</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>14</div>
+                            <div class="play-image" style="background-image: url('/Images/play_04.jpg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Tip Tip Barsa Pani</dt>
+                                    <dd style="font-size: 12px;">Suryavamshi</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>15</div>
+                            <div class="play-image" style="background-image: url('/Images/play_05.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>jo tenu dhoop lagya ve</dt>
+                                    <dd style="font-size: 12px;">Rito Riba</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="play-list">
+                        <div class="play-list-det">
+                            <div>16</div>
+                            <div class="play-image" style="background-image: url('/Images/play_06.jpeg');"></div>
+                            <div class="play-details" style="margin-top: 17px;">
+                                <dl>
+                                    <dt>Enna Sona Tu</dt>
+                                    <dd style="font-size: 12px;">Ok Jaanu</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="hear-and-plus">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                             &nbsp; &nbsp;
+                            <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </main>
+
+        <div id="audio-container" class="container-fluid">
+
+            <div id="audio-in-container">
+
+                <!-- Audio Image Container -->
+                <div id="audio-container" class="container-fluid">
+
+                    <div class="music-player">
+                        <div class="song-bar">
+                            <div class="song-infos">
+                                <div class="image-container">
+                                    <img src="https://d2y6mqrpjbqoe6.cloudfront.net/image/upload/f_auto,q_auto/media/library-400/216_636967437355378335Your_Lie_Small_hq.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="song-description">
+                                    <p class="title">
+                                        Watashitachi wa Sou Yatte Ikite Iku Jinshu na no
+                                    </p>
+                                    <p class="artist">Masaru Yokoyama</p>
+                                </div>
+                            </div>
+                            <div class="icons">
+                                <i class="far fa-heart"></i>
+                                <i class="fas fa-compress"></i>
+                            </div>
+                        </div>
+                        <div class="progress-controller">
+                            <div class="control-buttons">
+                                <i class="fas fa-random"></i>
+                                <i class="fas fa-step-backward"></i>
+                                <i class="play-pause fas fa-play"></i>
+                                <i class="fas fa-step-forward"></i>
+                                <i class="fas fa-undo-alt"></i>
+                            </div>
+                            <div class="progress-container">
+                                <span>0:49</span>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <span>3:15</span>
+                            </div>
+                        </div>
+                        <div class="other-features">
+                            <i class="fas fa-list-ul"></i>
+                            <i class="fas fa-desktop"></i>
+                            <div class="volume-bar">
+                                <i class="fas fa-volume-down"></i>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
